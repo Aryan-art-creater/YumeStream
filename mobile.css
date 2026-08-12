@@ -1,0 +1,16 @@
+.slot{
+    flex: 0 0 auto;
+}
+
+.top-6{
+    display: flex;
+    column-gap: 100px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;      /* Firefox */
+    -ms-overflow-style: none;   /* IE */
+}
+
+.top-6::-webkit-scrollbar {
+    display: none;              /* Chrome */
+}

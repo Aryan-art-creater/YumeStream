@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zilla+Slab+Highlight:wght@400;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    /* background-color: black; */
+    
+}
+
+
+.navbar {
+    border: 1px solid black;
+    /* opacity: 90%; */
+    background-color: black;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 60px;
+    /* position: fixed; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    /* opacity: 90%; */
+}
+
+.logo {
+    /* color: white; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo div:nth-child(1) {
+    color: rgb(200, 182, 255);
+    font-size: 34px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.logo div:nth-child(2) {
+    color: rgb(244, 247, 255);
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Zilla Slab Highlight", serif;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+}
+
+.nav-links i:hover {
+    color: #facc15;
+    cursor: pointer;
+}
+
+.nav-links span:hover {
+    color: #facc15;
+    cursor: pointer;
+}
+
+.vip {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.vip i {
+    color: yellow;
+    cursor: pointer;
+}
+
+.vip :last-child {
+    color: white;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+    /* font-family: "Montserrat", sans-serif; */
+}
+
+.search i {
+    color: white;
+    cursor: pointer;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.user i {
+    color: white;
+    cursor: pointer;
+}
+
+
+.movie{
+     width: 100%;
+    height: 89vh;
+    background-image: url("https://images.wallpapersden.com/image/download/spider-man-no-way-home-portals_bG1qamWUmZqaraWkpJRobWllrWdma2U.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+    backdrop-filter: 300px;
+    position: relative;
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 80px;
+    justify-content: space-evenly;
+    overflow: hidden;
+    
+}
+
+.movie::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    backdrop-filter: blur(8px);
+    background: rgba(30, 30, 30, 0.4);
+    z-index: 0;
+}
+
+.movie-details{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 60px;
+    row-gap: 40px;
+}
+
+.movie-up{
+    display: flex;
+    column-gap: 60px;
+}
+
+.movie-vrt{
+   display: flex;
+   flex-direction: column;
+   row-gap: 30px;
+   padding-top: 10px;
+}
+
+.movie-img img{
+    /* border: 2px solid white; */
+    width: 180px;
+    height: 290px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease;
+}
+
+/* .movie-img img:hover{
+    transform: scale(1.1) translateY(-10px);
+    box-shadow: 6px 10px 20px rgba(156, 156, 156, 0.8);
+    z-index: 10;
+} */
+
+.movie-tv{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.movie-tv .dot{
+    font-family: "Montserrat", sans-serif;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(66, 66, 66);
+    border-radius: 5px;
+}
+
+.movie-tv .duration{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+.movie-name{
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.quality {
+    display: flex;
+    align-items: center;
+    color: white;
+    column-gap: 10px;
+}
+
+.quality .box {
+    border: 2px solid white;
+    padding: 2px 5px;
+    border-radius: 6px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.quality :nth-child(2) {
+    background-color: red;
+    border: 2px solid red;
+    color: black;
+}
+
+.quality :nth-child(5) {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+.quality .dot{
+    font-family: "Montserrat", sans-serif;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(65, 65, 65);
+    border-radius: 5px;
+}
+
+.quality .duration{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    padding-top: 20px;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    /* border: 2px solid white; */
+    /* border-radius: 30px; */
+    padding: 10px 20px;
+    border: 3px solid transparent;
+    border-radius: 30px;
+    background: linear-gradient(#000, #000) padding-box,
+                linear-gradient(90deg, red, orange, yellow, green, blue, purple, red) border-box;
+    /* background:
+        linear-gradient(transparent, transparent) padding-box,
+        linear-gradient(90deg, red, orange, yellow, green, blue, purple, red) border-box; */
+    background-size: 200%;
+    animation: rainbow 3s linear infinite;
+}   
+
+@keyframes rainbow {
+    0% { background-position: 0%; }
+    100% { background-position: 200%; }
+}
+
+.btn div:nth-child(2){
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btn .plus{
+    font-size: 22px;
+    background: linear-gradient(
+        to right,
+        red, orange, yellow, green, blue, purple
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%;
+    animation: rainbow 3s linear infinite;
+}
+
+.movie-down{
+    position: relative;
+    z-index: 5;
+    width: 1400px;
+    font-weight: 500;
+    color: white;
+    text-align: justify;
+    word-spacing: 1px;
+    letter-spacing: 0px;
+    transition: all 0.5s ease;
+    /* backdrop-filter: 100px; */
+    background-color: rgba(0, 0, 0, 0.363);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 4px;
+}
+
+
+.movie.active .movie-down{
+    width: 1000px;
+}
+/* .right-panel{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    position: fixed;
+} */
+
+.movie-genres{  
+    /* margin: 0px 20px; */
+    position: relative;
+    z-index: 10;
+    /* top: 0;
+    right: 0;    */
+    width: 440px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.363);
+    backdrop-filter: blur(10px);
+    /* background: transparent; */
+    /* border: 2px solid black; */
+    z-index: 10;
+    color: white;
+    transform: translateX(100%);
+    transition: transform 0.6s ease;
+}
+
+.movie.active .movie-genres{
+    transform: translateX(0%);
+}
+
+/* .right-panel:hover .movie-genres{
+    transform: translateX(0%);
+}
+
+.right-panel:hover .movie-down{
+    width: 1000px;
+} */
+
+
+
+
+.upper{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0px 0px 50px;
+    row-gap: 20px;
+    font-size: 14px;
+}
+
+.more-detail-arrow{
+    display: flex;
+    position: relative;
+    right: 30px;
+    font-size: 30px;
+}
+
+.middle{
+    display: flex;
+    column-gap: 7px;
+    padding: 40px 0px 0px 50px;
+}
+
+.head{
+    font-size: 14px;
+}
+
+.genres{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 7px;
+}
+
+.genres div{
+    border: 1px solid white;
+    border-radius: 30px;
+    width: 90px;
+    height: auto;
+    padding: 2px 1px;
+    display: flex;
+    font-size: 13px;
+    justify-content: center;
+}
+
+.lower{
+    padding: 40px 0px 0px 50px;
+    font-size: 14px;
+}
+
+.seprate{
+    width: 360px;
+    height: 2px;
+    background-color: rgb(154, 154, 154);
+    margin: 40px 0px 0px 30px;
+}
+
+.arrow {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    /* transform: translateY(-50%); */
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    /* margin: 0px 0px 0px 0px; */
+    padding: 10px 15px;
+    cursor: pointer;
+    /* width: 100px;
+    height: 70px; */
+    border-radius: 50%;
+    z-index: 11;
+    transition: 0.3s;
+}
+
+.arrow:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.movie.active .arrow {
+    transform: rotate(180deg);
+    right: 424px;
+}
